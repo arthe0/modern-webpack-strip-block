@@ -15,7 +15,7 @@ rebuilt for webpack 5 and published as `modern-webpack-strip-block`.
 - **Renamed** the package `webpack-strip-block` → `modern-webpack-strip-block`. The default
   replacement marker is now `modern-webpack-strip-block:removed`.
 - **webpack 5 required.** Dropped webpack 2–4 support; the peer dependency is now `webpack ^5.0.0`.
-- **Node.js ≥ 18 required** (`engines`).
+- **Node.js ≥ 14 required** (`engines`).
 - **`replacementText` is now emitted literally.** It was previously regex-escaped, which mangled
   backslashes and special characters in the output.
 

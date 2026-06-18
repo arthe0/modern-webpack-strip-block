@@ -1,17 +1,21 @@
 {
-    "name": "webpack-strip-block",
-    "version": "0.3.0",
-    "description": "Webpack plugin to strip blocks of code that's only intended for development purposes",
+    "name": "modern-webpack-strip-block",
+    "version": "1.0.0",
+    "description": "Webpack 5 loader to strip marked blocks of code from bundles",
     "main": "index.js",
     "repository": {
         "type": "git",
-        "url": "git://git@github.com/jballant/webpack-strip-block.git"
+        "url": "git+https://github.com/arthe0/webpack-strip-block.git"
     },
-    "homepage": "https://github.com/jballant/webpack-strip-block",
+    "homepage": "https://github.com/arthe0/webpack-strip-block#readme",
+    "bugs": {
+        "url": "https://github.com/arthe0/webpack-strip-block/issues"
+    },
     "keywords": [
         "webpack",
-        "webpackloader",
-        "stripcode"
+        "webpack-loader",
+        "loader",
+        "strip-code"
     ],
     "author": {
         "name": "James Ballantine",
@@ -26,17 +30,21 @@
         }
     ],
     "license": "MIT",
-    "peerDependencies": {
-        "webpack": ">=2.2.0"
+    "engines": {
+        "node": ">=18"
     },
-    "dependencies": {
-        "loader-utils": "^1.1.0"
+    "files": [
+        "index.js",
+        "README.md",
+        "LICENSE"
+    ],
+    "peerDependencies": {
+        "webpack": "^5.0.0"
     },
     "devDependencies": {
         "memfs": "^3.1.2",
-        "memory-fs": "^0.5.0",
-        "mocha": "^7.1.1",
-        "webpack": "^4.42.1"
+        "mocha": "^11.0.0",
+        "webpack": "^5.107.2"
     },
     "scripts": {
         "test": "mocha"
